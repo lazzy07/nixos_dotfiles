@@ -27,7 +27,7 @@
                 useGlobalPkgs = true; 
 	        useUserPackages = true;
 	        backupFileExtension = "backup";
-	        users.lazzy07 = import ./home.nix;
+	        users.lazzy07 = import ./home/users/lazzy07/home.nix;
 	      };
             }
             
@@ -39,9 +39,9 @@
 	    
 	    ./modules/shells/zsh.nix
 	    
-	    ./modules/window_compositors/hyprland.nix
-	    
 	    ./modules/system/gc.nix
+
+	    ./modules/window_compositors/hyprland.nix
 	  ];
 	};
       };
