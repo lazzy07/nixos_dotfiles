@@ -8,6 +8,7 @@
   imports = [
     ./modules/zsh.nix
     ./modules/git.nix
+    ./modules/hypridle.nix
   ];
 }
 
