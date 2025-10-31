@@ -17,8 +17,4 @@
       ];
     };
   };
-
-  xdg.configFile."hypr/hyprland.conf".text = ''
-    exec-once = hypridle
-  '';
 }
