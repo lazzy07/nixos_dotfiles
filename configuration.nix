@@ -8,18 +8,19 @@
     [ 
       ./hardware-configuration.nix
       ./modules/boot/bootloader.nix # Bootloader configurations
+      ./modules/network/networkmanager.nix # Network support with networkmanager
       ./modules/rgb_light_control/predator5000_lights.nix
       ./modules/hardware/nvidia.nix # Nvidia driver configurations
       ./modules/login_managers/getty.nix
     ];
 
   # Networking functionality
-  networking.hostName = "predator5000"; # Define your hostname.
-  networking.wireless.enable = false;  # Diasble legacy wpa_supplicant.
-  networking.wireless.iwd.enable = false; # Disable iwd, let networkmanager handle it.
+  # networking.hostName = "predator5000"; # Define your hostname.
+  # networking.wireless.enable = false;  # Diasble legacy wpa_supplicant.
+  # networking.wireless.iwd.enable = false; # Disable iwd, let networkmanager handle it.
 
   # Enable networking
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
  
   # Set your time zone.
   time.timeZone = "America/New_York";

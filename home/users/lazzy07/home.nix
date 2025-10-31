@@ -6,10 +6,10 @@
   home.stateVersion = "25.05";
 
   imports = [
-    ./modules/zsh.nix
-    ./modules/git.nix
-    ./modules/hypridle.nix
-    ./modules/hyprland.nix
+    ./modules/zsh/zsh.nix
+    ./modules/git/git.nix
+    ./modules/hyprland/hypridle.nix
+    ./modules/hyprland/hyprland.nix
   ];
 }
 

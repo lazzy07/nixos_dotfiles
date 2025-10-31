@@ -8,12 +8,12 @@
 
       bind = [
         "$mod, RETURN, exec, kitty"
-	"$mod, Q, closewindow"
-	"$mod SHIFT, Q, killactive"
-	"$mod SHIFT, R, reload"
+	"$mod, q, killactive"
+	"$mod SHIFT, q, forcekillactive"
+	"$mod SHIFT, r, exec, hyprctl reload"
       ];
 
       exec-once = ["hypridle"];
     };
-  }
+  };
 }
