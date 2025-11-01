@@ -8,7 +8,6 @@
   imports = [
     ./modules/zsh/zsh.nix
     ./modules/git/git.nix
-    ./modules/hyprland/hypridle.nix
     ./modules/hyprland/hyprland.nix
   ];
 }

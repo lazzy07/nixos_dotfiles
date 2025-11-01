@@ -1,19 +1,14 @@
 { config, pkgs, lib, ... }:
 {
-  wayland.windowManager.hyprland = {
-    enable = true;
+  # Enable hyprland
+  wayland.windowManager.hyprland.enable = true;
 
-    settings = {
-      "$mod" = "SUPER";
+  # bind .config files
+  xdg.configFile."hypr".source = ./.config/hypr;
 
-      bind = [
-        "$mod, RETURN, exec, kitty"
-	"$mod, q, killactive"
-	"$mod SHIFT, q, forcekillactive"
-	"$mod SHIFT, r, exec, hyprctl reload"
-      ];
-
-      exec-once = ["hypridle"];
-    };
-  };
+  # hyprland requirements
+  home.packages = with pkgs; [ 
+    hypridle
+    brightnessctl
+  ];
 }
