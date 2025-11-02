@@ -8,8 +8,9 @@
 
   users.users.lazzy07.extraGroups = [ "networkmanager" ];
 
-  environment.systemPackages = [ pkgs.networkmanagerapplet ];
-
+  # Add keyring to remember wifi password
+  services.gnome.gnome-keyring.enable = true;
   services.dbus.enable = true;
 
+  environment.systemPackages = [ pkgs.networkmanagerapplet ];
 }
