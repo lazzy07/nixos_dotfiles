@@ -9,6 +9,7 @@
     ./modules/zsh/zsh.nix
     ./modules/git/git.nix
     ./modules/hyprland/hyprland.nix
+    ./modules/waybar/waybar.nix
   ];
 }
 
